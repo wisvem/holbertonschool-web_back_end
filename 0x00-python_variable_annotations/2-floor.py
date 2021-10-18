@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""floor module"""
+"""a type-annotated function math"""
 import math
 
-def floor(n: float) -> float:
-    """Floor function"""
+
+def floor(n: float) -> int:
+    """returns the floor of the float number"""
     return math.floor(n)
