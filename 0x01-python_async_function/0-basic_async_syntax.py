@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Module"""
+
 from asyncio import sleep
 from random import uniform
 
