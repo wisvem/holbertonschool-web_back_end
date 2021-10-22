@@ -11,4 +11,5 @@ def measure_time(n: int, max_delay: int) -> float:
     """ Measure the runtime """
     start = time()
     run(wait_n(n, max_delay))
-    return time()-start
+    end = time()
+    return end-start
