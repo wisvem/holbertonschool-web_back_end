@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Basic Flask app
 """
-from flask_babel import Babel, _
+from flask_babel import Babel
 from flask import Flask, render_template, request, flash
 
 app = Flask(__name__, template_folder='templates')
@@ -9,7 +9,7 @@ babel = Babel(app)
 
 
 class Config(object):
-    """ Configuration Classfor babel"""
+    """ Configuration Classfor babel """
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
