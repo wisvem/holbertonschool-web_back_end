@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-""" Module for 
-    trying out Babel i18n
+""" Basic Flask app
 """
 from flask_babel import Babel, _
 from flask import Flask, render_template, request, flash
@@ -10,10 +9,7 @@ babel = Babel(app)
 
 
 class Config(object):
-    """ Configuration Class
-        for babel
-    """
-
+    """ Configuration Classfor babel"""
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
